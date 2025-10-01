@@ -1,7 +1,7 @@
-const traficLightDefault = '/default.png';
-const traficLightRed = '/red.png';
-const traficLightYellow = '/yellow.png';
-const traficLightGreen = '/green.png';
+const traficLightDefault = './default.png';
+const traficLightRed = './red.png';
+const traficLightYellow = './yellow.png';
+const traficLightGreen = './green.png';
 
 const container = document.createElement('div');
 const img = document.createElement('img');
@@ -62,7 +62,7 @@ if (color === null) {
     img.setAttribute('src', colorArray[input]);
     let src = img.getAttribute('src')
     if (src === traficLightRed) {
-      label.setAttribute('src', '/stop.png');
+      label.setAttribute('src', './stop.png');
       
       label.style.cssText = `
         position: absolute;
@@ -75,7 +75,7 @@ if (color === null) {
       label.innerText = "WAIT";
      
     } else if (src === traficLightGreen) {
-      label.setAttribute('src', '/go.png');
+      label.setAttribute('src', './go.png');
       label.style.cssText = `
         position: absolute;
         bottom: 24.6%;
